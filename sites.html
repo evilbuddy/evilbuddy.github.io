@@ -2,6 +2,7 @@
 <html>
     <head lang="fr">
         <link rel="stylesheet" href="style.css"/>
+        <link rel="stylesheet" href="sites.css"/>
         <script src="script.js"></script>
         <meta charset="utf-8"/>
     </head>
@@ -15,21 +16,9 @@
     </header>
 
     <body>
-        <div class="main">
-            <h1>Welcome to Evil Buddy's official site !</h1>
-            <!--<p>It is empty for now, <br>
-            but you can try the buttons on the navigation bar !</p>-->
-            <div id="twitch-embed"></div>
-        </div>
-
-        <script src="https://embed.twitch.tv/embed/v1.js"></script>
-        <script type="text/javascript">
-            new Twitch.Embed("twitch-embed", {
-              width: 854,
-              height: 480,
-              channel: "monstercat",
-              parent: ["evilbuddy.github.io"]
-            });
-          </script>
+        <input class="site" type="button" value="Xoverse" onclick="alert('soon !')">
+        <input class="site" type="button" value="GOOGLE Hub" onclick="op('https\://evilbuddy.github.io/GLHub/')">
+        <input class="site" type="button" value="Synapse R" onclick="op('https\://synapse-r.github.io/')">
+        <input class="site" type="button" value="Abdoul'Hack" onclick="op('https\://abdoulhack.netlify.app/')">
     </body>
 </html>

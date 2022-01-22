@@ -3,28 +3,36 @@ header
     background-color: aqua;
 }
 
+header input:not(.icon)
+{
+    float: right;
+    padding-right: 20px;
+    cursor: pointer;
+}
+
+
 header input[type="button"]
 {
     border: none;
-    color: white;
-    position: fixed;
+    background-color:#909090;
+    color: #000;
     text-align: middle;
     padding-left: 30px;
     padding-right: 30px;
     text-decoration: none;
     font-family: Arial;
     font-size: 30px;
+    margin-right: 10px;
 }
 
-header input[type="image"]
-{
-    float: right;
-    padding-right: 20px;
-}
-
-header input:hover
+header input:not(.icon):hover
 {
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
+}
+
+header input[type="button"]:hover
+{
+    background-color: #7A7A7A;
 }
 
 header input:active
@@ -34,7 +42,12 @@ header input:active
     left: 105px;
 }
 
-header, header img, header input, footer
+header input[type="button"]:active
+{
+    background-color: #707070;
+}
+
+header, header input, footer
 {
     height: 50px;
 }
@@ -52,7 +65,13 @@ body
     color: white;
 }
 
-mamadou
-{
-    font-size: 600px;
+.site {
+    background-color: #EDEDED;
+    color: black;
+    margin: 10px;
+    width: calc(100vw - 20px);
+    height: 40px;
+    border: none;
+    border-radius: 40px;
+    font-size: 35px;
 }

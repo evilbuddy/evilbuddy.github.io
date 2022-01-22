@@ -18,3 +18,11 @@ function youtube() {
 function discord() {
     op("https://discord.gg/9qXe59UajH");
 }
+
+function sites() {
+    op("sites.html", false);
+}
+
+function main() {
+    op("index.html", false);
+}
