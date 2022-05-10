@@ -12,7 +12,7 @@ function twitch() {
 }
 
 function youtube() {
-    alert("soon !");
+    alert("soon !\n(someday)\n(maybe)");
 }
 
 function discord() {
