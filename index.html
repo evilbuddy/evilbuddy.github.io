@@ -1,43 +1,74 @@
 <!DOCTYPE html>
-<html>
-    <head lang="fr">
-        <link rel="stylesheet" href="style.css"/>
-        <script src="script.js"></script>
-        <meta charset="utf-8"/>
-    </head>
-    
+
+<html lang="fr">
+
+<head>
+    <title>&lrm;</title>
+
+    <!-- Scripts -->
+    <script src="JS/title.js"></script>
+    <script src="JS/tabs.js"></script>
+    <script src="JS/xoverse.js"></script>
+
+    <!-- Style -->
+    <link rel="stylesheet" href="CSS/main.css"/>
+</head>
+
+<body>
     <header>
-        <input class="icon" type="image" src="evilbuddy.png" onclick="main()" />
-        <input type="image" src="twitch.png" onclick="twitch()" />
-        <input type="image" src="youtube.png" onclick="youtube()" />
-        <input type="image" src="discord.png" onclick="discord()" />
-        <input type="button" value="Sites" onclick="sites()" />
+        <input class="tab-on" id="About-btn" type="button" value="About" onclick="changeTab(this, document.getElementById('About'), 1)"/>
+        <input id="Dev-btn" type="button" value="Dev" onclick="changeTab(this, document.getElementById('Dev'), 2)"/>
+        <input id="Team-btn" type="button" value="Team" onclick="changeTab(this, document.getElementById('Team'), 3)"/>
+        <input id="Media-btn" type="button" value="Media" onclick="changeTab(this, document.getElementById('Media'), 4)"/>
+        <div id="navbar"></div>
     </header>
 
-    <body>
-        <div class="main">
-            <h1>Welcome to Evil Buddy's official site !</h1>
-            <h3>one motto:</h3>
-            <p>No Friends <br/>
-            No Life<br/>
-            Just Games</p>
-            <h3>I am a developer</h3>
-            <p> C# | C++ | HTML | CSS | JS | lua (GMod/Roblox)</p>
-            <h3>And the <a href="https://xoverse.ga/">Xoverse</a> co-founder</h3>
-            <h1>Check and follow me on twitch !</h1>
-            <!--<p>It is empty for now, <br>
-            but you can try the buttons on the navigation bar !</p>-->
-            <div id="twitch-embed"></div>
-        </div>
+    <div class="tab" id="About">
+        <h1>he/him</h1>
+        <h1>Dev</h1>
+        <h1>Lifeless LoL player</h1>
+        <h1>Casual streamer</h1>
+    </div>
 
-        <script src="https://embed.twitch.tv/embed/v1.js"></script>
-        <script type="text/javascript">
-            new Twitch.Embed("twitch-embed", {
-              width: 854,
-              height: 480,
-              channel: "evilbuddy_",
-              parent: "evilbuddy.github.io"
-            });
-          </script>
-    </body>
+    <div class="tab hidden" id="Dev">
+        <h1>C++</h1>
+        <h1>C#</h1>
+        <h1>VB.NET</h1>
+        <h1>HTML</h1>
+        <h1>CSS</h1>
+        <h1>JS</h1>
+        <h1>Node.JS</h1>
+        <h1>lua (GMod / Roblox)</h1>
+
+    </div>
+
+    <div class="tab hidden" id="Team">
+        <h1 style="text-align: center;"><a href="https://xoverse.ga/">Xoverse</a></h1>
+
+        <h1>Dev</h1>
+        <h3><a href="https://akii.fr/">Akii</a></h3>
+        <h3>Evil Buddy</h3>
+
+        <h1>Graphisms</h1>
+        <h3>Rukuto</h3>
+        <h3>Kanime</h3>
+
+        <h1>Audio</h1>
+        <h3>Alive</h3>
+
+        <h1>Gaming / Testing</h1>
+        <h3>Capitaine_fr</h3>
+        <h3>SLhunter</h3>
+        <h3>Naofumi</h3>
+        <h3>Devil Dragon</h3>
+    </div>
+
+    <div class="tab hidden" id="Media">
+        <input type="button" value="Xoverse" onclick="op('https://xoverse.ga/', false)"/>
+        <input type="button" value="Twitch" onclick="op('https://twitch.tv/evilbuddy_', false)"/>
+        <input type="button" value="Discord server" onclick="op('https://discord.gg/9qXe59UajH', false)"/>
+        <input type="button" value="Google hub" onclick="op('https\://evilbuddy.github.io/GLHub/', false)"/>
+    </div>
+</body>
+
 </html>

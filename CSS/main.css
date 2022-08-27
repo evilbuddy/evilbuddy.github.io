@@ -1,0 +1,92 @@
+:root
+{
+    --col-main: #ffffff;
+    --col-alt: #424341;
+    --col-back: #131313;
+}
+
+html, body
+{
+    margin: 0;
+    overflow: hidden;
+}
+
+body
+{
+    background-color: var(--col-back);
+}
+
+header
+{
+    height: 50px;
+    border-bottom: 5px solid var(--col-alt);
+}
+
+header li
+{
+    height: 100%;
+    width: 49%;
+    display: inline-block;
+}
+
+header input[type="button"]
+{
+    height: 100%;
+    width: 24%;
+    background: transparent;
+    border: none;
+    color: var(--col-alt);
+    font-weight: bold;
+    font-size: 20px;
+}
+
+header div
+{
+    height: 5px;
+    width: 25%;
+    background-color: var(--col-main);
+    transition: all 0.25s linear;
+}
+
+.tab-on
+{
+    color: var(--col-main) !important;
+}
+
+.tab-on::after
+{
+    content: " ";
+    color: var(--col-main) !important;
+}
+
+.hidden
+{
+    visibility: hidden;
+}
+
+.tab
+{
+    width: calc(100% - 2rem);
+    height: calc(calc(100vh - 55px) - 2rem);
+    margin-left: 1rem;
+    margin-top: 1rem;
+    background-color: var(--col-alt);
+    position: absolute;
+}
+
+.tab *
+{
+    font-family: "Consolas";
+    color: white;
+    margin: 0;
+}
+
+.tab input[type="button"]
+{
+    background-color: var(--col-back);
+    border: 0;
+    font-size: 30px;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 1rem;
+}
