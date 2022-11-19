@@ -1,0 +1,35 @@
+.tab
+{
+    color: white;
+    display: block;
+    font-family: Arial;
+    font-size: 40px;
+    text-align: center;
+    margin: 1rem;
+    width: calc(100% - 2rem);
+    background-color: #0008;
+    border-radius: 24px;
+    cursor: pointer;
+}
+
+.open
+{
+    background-color: #0f0;
+}
+
+.tabcontent
+{
+    transition: all 0.25s 0.25s linear;
+    overflow: hidden;
+    color: #fff;
+    font-family: Arial;
+    max-width: calc(100% - 2rem);
+    word-wrap: normal;
+    margin: 1rem;
+}
+
+.tabclosed
+{
+    transition: all 0.25s linear;
+    height: 0 !important;
+}
