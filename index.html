@@ -1,76 +1,30 @@
 <!DOCTYPE html>
 
-<html lang="fr">
+<html lang="en">
 
 <head>
-    <title>&lrm;</title>
-
-    <!-- Scripts -->
-    <script src="JS/title.js"></script>
-    <script src="JS/tabs.js"></script>
-    <script src="JS/xoverse.js"></script>
-
-    <!-- Style -->
-    <link rel="stylesheet" href="CSS/main.css"/>
+    <title>Evil Buddy</title>
+    <link rel="icon" href="media/pfp_shadow.png" />
+    <link rel="stylesheet" href="index.css" />
 </head>
 
 <body>
-    <header>
-        <input class="tab-on" id="About-btn" type="button" value="About" onclick="changeTab(this, document.getElementById('About'), 1)"/>
-        <input id="Dev-btn" type="button" value="Dev" onclick="changeTab(this, document.getElementById('Dev'), 2)"/>
-        <input id="Team-btn" type="button" value="Team" onclick="changeTab(this, document.getElementById('Team'), 3)"/>
-        <input id="Media-btn" type="button" value="Media" onclick="changeTab(this, document.getElementById('Media'), 4)"/>
-        <div id="navbar"></div>
-    </header>
+    <div class="left"><div>
+        <img src="media/pfp.png" />
+        <h1>Hi, I'm Evil Buddy.</h1>
+        <ul>
+            <li><img src="media/PC.png"/><p>Dev</p></li>
+            <li><img src="media/FRA.png"/><p>French</p></li>
+            <li><img src="media/Controller.png"/><p>Gamer</p></li>
+            <li><img src="media/Wolf.png"/><p>Furry</p></li>
+        </ul>
+    </div></div>
 
-    <div class="tab" id="About">
-        <h1>he/him</h1>
-        <h1>Dev</h1>
-        <h1>Lifeless LoL player</h1>
-        <h1>Casual streamer</h1>
-    </div>
-
-    <div class="tab hidden" id="Dev">
-        <h1>C++</h1>
-        <h1>C#</h1>
-        <h1>VB.NET</h1>
-        <h1>HTML</h1>
-        <h1>CSS</h1>
-        <h1>JS</h1>
-        <h1>Node.JS</h1>
-        <h1>lua (GMod / Roblox)</h1>
-
-    </div>
-
-    <div class="tab hidden" id="Team">
-        <h1 style="text-align: center;"><a href="https://xoverse.ga/">Xoverse</a></h1>
-
-        <h1>Dev</h1>
-        <h3><a href="https://akii.fr/">Akii</a></h3>
-        <h3>Evil Buddy</h3>
-
-        <h1>Graphisms</h1>
-        <h3>Rukuto</h3>
-
-        <h1>Audio</h1>
-        <h3>Alive</h3>
-
-        <h1>Gaming / Testing</h1>
-        <h3>Capitaine_fr</h3>
-        <h3>SLhunter</h3>
-        <h3>Naofumi</h3>
-        <h3>Devil Dragon</h3>
-    </div>
-
-    <div class="tab hidden" id="Media">
-        <input type="button" value="Setup" onclick="op('setup/index.html', false)"/>
-        <input type="button" value="Xoverse" onclick="op('https://xoverse.ga/', false)"/>
-        <input type="button" value="Twitch" onclick="op('https://twitch.tv/evilbuddy_', false)"/>
-        <input type="button" value="Soundcloud" onclick="op('https://soundcloud.com/evilbuddy', false)"/>
-        <input type="button" value="Discord server" onclick="op('https://discord.gg/9qXe59UajH', false)"/>
-        <input type="button" value="Google hub" onclick="op('https\://evilbuddy.github.io/GLHub/', false)"/>
-        <input type="button" value="TypicalWare" onclick="op('https\://typicalware.cf/', false)"/>
-    </div>
+    <div class="right"><div>
+        <a href="setup/index.html">My Setup</button>
+        <a href="https://xoverse.ga/">Xoverse's Website</button>
+        <a href="about/index.html">More about me</button>
+    </div></div>
 </body>
 
 </html>

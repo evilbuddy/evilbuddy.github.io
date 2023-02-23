@@ -1,0 +1,155 @@
+body
+{
+    background-color: #3F3F3F;
+    overflow: hidden;
+    user-select: none;
+    margin: 0;
+}
+
+.left, .right
+{
+    height: 100vh;
+    width: 50vw;
+}
+
+/*
+ * Left Part
+*/
+
+.left
+{
+    float: left;
+    box-shadow: 0px 0px 10px #000;
+}
+
+.left div
+{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.left div *
+{
+    color: #FFF;
+    font-family: Arial;
+}
+
+.left div img
+{
+    width: 20rem;
+    border-radius: 50%;
+    box-shadow: 0px 0px 50px #000;
+}
+
+.left div h1
+{
+    text-align: center;
+}
+
+.left div li *
+{
+    display: inline;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.left div li img
+{
+    width: 22px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/*
+ * Right Part
+*/
+
+.right
+{
+    float: left;
+    background-color: #0000001F;
+}
+
+.right div
+{
+    width: fit-content;
+    height: fit-content;
+    margin-left: 50%;
+    margin-top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.right div *
+{
+    color: #FFF;
+    font-family: Arial;
+    display: block;
+    text-align: center;
+}
+
+.right div a
+{
+    background-color: transparent;
+    margin: 5px;
+    font-size: 32px;
+    text-decoration: none;
+    padding: 20px;
+    border-style: solid;
+    border-radius: 5rem;
+    border-color: #00FF80;
+    border-width: 2px;
+    animation: button_leave 0.030s linear;
+}
+
+.right div a:hover
+{
+    font-size: 34px;
+    padding: 22px;
+    border-color: #FFF;
+    border-width: 4px;
+    box-shadow: 0px 0px 10px #00FF80, inset 0px 0px 10px #00FF80;
+    animation: button_hover 0.030s linear;
+}
+
+@keyframes button_hover
+{
+    from
+    {
+        font-size: 32px;
+        padding: 20px;
+        border-color: #00FF80;
+        border-width: 2px;
+        box-shadow: 0px 0px 0px #00FF80, inset 0px 0px 0px #00FF80;
+    }
+    to
+    {
+        font-size: 34px;
+        padding: 22px;
+        border-color: #FFF;
+        border-width: 4px;
+        box-shadow: 0px 0px 10px #00FF80, inset 0px 0px 10px #00FF80;
+    }
+}
+
+@keyframes button_leave
+{
+    from
+    {
+        font-size: 34px;
+        padding: 22px;
+        border-color: #FFF;
+        border-width: 4px;
+        box-shadow: 0px 0px 10px #00FF80, inset 0px 0px 10px #00FF80;
+    }
+    to
+    {
+        font-size: 32px;
+        padding: 20px;
+        border-color: #00FF80;
+        border-width: 2px;
+        box-shadow: 0px 0px 0px #00FF80, inset 0px 0px 0px #00FF80;
+    }
+}
