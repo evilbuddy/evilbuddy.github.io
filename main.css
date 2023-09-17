@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Handlee&display=swap');
+
+body
+{
+    user-select: none;
+    overflow: hidden;
+
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+
+    background-image: url('media/background2.gif');
+    background-size: cover;
+    backdrop-filter: blur(10px);
+}
+
+/* body (site content) */
+.body
+{
+    display: block;
+    position: absolute;
+    
+    box-shadow: 0px 0px 50px;
+
+    left: 30%;
+    top: 30%;
+    min-width: 600px;
+    width: 40%;
+    height: 40%;
+
+    background-color: #fff1;
+
+    border-radius: 20px;
+
+    opacity: 0;
+    animation: fade-in linear 1 0.5s 1s forwards;
+}
+
+.body *
+{
+    color: #fff;
+    font-family: "Handlee";
+
+    opacity: 0;
+    animation: fade-in linear 1 0.5s 1.5s forwards;
+}
+
+.name
+{
+    text-align: center;
+}
+
+.presentation
+{
+    display: block;
+    position: absolute;
+
+    left: 10px;
+    top: 10px;
+    width: 128px;
+    height: calc(100% - 20px);
+}
+
+.presentation img
+{
+    height: 128px;
+
+    border-radius: 50%;
+}
+
+.presentation p
+{
+    margin: 0;
+
+    font-size: 32px;
+    text-align: center;
+}
+
+.presentation .french
+{
+    background: linear-gradient(to right, blue, white, red);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.info
+{
+    text-align: center;
+    font-size: 20px
+}
+
+.links
+{
+    position: absolute;
+
+    left: 178px;
+    width: calc(100% - 178px);
+    height: calc(100% - 135px);
+    overflow: hidden;
+}
+
+/* animations */
+@keyframes fade-in {
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 100%;
+    }
+}
+
+@keyframes blur {
+    from
+    {
+        filter: blur(0);
+    }
+    to
+    {
+        filter: blur(10px);
+    }
+}
