@@ -90,14 +90,28 @@ body
     font-size: 20px
 }
 
-.links
+.medias
 {
     position: absolute;
 
     left: 178px;
     width: calc(100% - 178px);
-    height: calc(100% - 135px);
+    height: calc(100% - calc(135px + 32px));
     overflow: hidden;
+}
+
+.links
+{
+    display: block;
+    position: absolute;
+
+    top: calc(100% - 32px);
+    height: 32px;
+    width: 100%;
+
+    border-radius: 0 0 16px 16px;
+
+    text-align: center;
 }
 
 /* animations */
