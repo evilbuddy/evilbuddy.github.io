@@ -1,34 +1,48 @@
-function showtab(tabID)
+function tab(sender)
 {
-    var cur = 1;
-    var valid = true;
+    let name = sender.parentNode.id.replace("-btns", "");
 
-    while(valid)
+   offAll(name);
+
+    // get and show selected tab
+    let tab = document.getElementById(name + "-tab" + sender.id.replace(name + "-btn", ""));
+    if(tab.classList.contains("hidden"))
     {
-        var tab = document.getElementById('tab' + cur);
-        var open = document.getElementById('open' + cur);
-
-        if(tab == null || tab == undefined)
-        {
-            valid = false;
-        }
-        else
-        {
-            tab.classList = "tabcontent tabclosed";
-        }
-
-        if(open == null || open == undefined)
-        {
-            valid = false;
-        }
-        else
-        {
-            open.classList = "tab";
-        }
-
-        cur += 1;
+        tab.classList.remove("hidden");
     }
 
-    document.getElementById('tab' + tabID).classList = "tabcontent";
-    document.getElementById('open' + tabID).classList = "tab open";
+    // set selected button to active
+    if(!sender.classList.contains("active"))
+    {
+        sender.classList.add("active");
+    }
+}
+
+// function to disable everything with the specified name
+function offAll(name)
+{
+    let btns = document.getElementById(name + "-btns").children;
+    let tabs = document.getElementById(name + "-body").children;
+
+    // hide all tabs
+    for(let i = 0; i < tabs.length; i++)
+    {
+        let v = tabs[i];
+
+        if(!v.classList.contains("hidden"))
+        {
+            v.classList.add("hidden");
+        }
+    }
+
+    // set all buttons to inactive
+    for(let i = 0; i < btns.length; i++)
+    {
+        let v = btns[i];
+
+        if(v.classList.contains("active"))
+        {
+            v.classList.remove("active");
+        }
+    }
 }

@@ -93,11 +93,30 @@ body
 .medias
 {
     position: absolute;
+    overflow: scroll;
 
     left: 178px;
     width: calc(100% - 178px);
+    max-height: 80%;
     height: calc(100% - calc(135px + 32px));
-    overflow: hidden;
+}
+
+.medias::-webkit-scrollbar
+{
+    width: 5px;
+    height: 0;
+}
+
+.medias::-webkit-scrollbar-track
+{
+    background: #0004;
+    border-radius: 2.5px;
+}
+
+.medias::-webkit-scrollbar-thumb
+{
+    background: #fff4;
+    border-radius: 2.5px;
 }
 
 .links
