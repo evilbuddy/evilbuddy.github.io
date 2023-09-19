@@ -1,35 +1,87 @@
-.tab
+/* tab control */
+.tabcontrol
 {
-    color: white;
+    display: inline-block;
+    vertical-align: top;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
+    max-width: 20%;
+    height: calc(100% - 40px);
+    width: 10rem;
+
+    background-color: #0004;
+
+    border-radius: 20px 0px 0px 20px;
+}
+
+.tabcontrol *
+{
     display: block;
-    font-family: Arial;
-    font-size: 40px;
-    text-align: center;
-    margin: 1rem;
-    width: calc(100% - 2rem);
-    background-color: #0008;
-    border-radius: 24px;
+}
+
+.tabcontrol div
+{
     cursor: pointer;
+
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
-.open
+.tabcontrol div:hover
 {
-    background-color: #0f0;
+    background: #0004;
 }
 
-.tabcontent
+.tabcontrol div *
 {
-    transition: all 0.25s 0.25s linear;
-    overflow: hidden;
-    color: #fff;
-    font-family: Arial;
-    max-width: calc(100% - 2rem);
-    word-wrap: normal;
-    margin: 1rem;
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
 }
 
-.tabclosed
+.tabcontrol .active
 {
-    transition: all 0.25s linear;
-    height: 0 !important;
+    background: #fff4;
+}
+
+/* tab container */
+.tabs
+{
+    display: inline-block;
+    vertical-align: top;
+
+    min-width: calc(80% - 20px);
+    width: calc(100% - 10rem);
+    height: 100%;
+}
+
+.tabs div
+{
+    height: 100%;
+    width: 100%;
+}
+
+.tabs .hidden
+{
+    visibility: hidden;
+
+    width: 0px;
+    height: 0px;
+}
+
+/* other things */
+.sided
+{
+    display: inline-block;
+    vertical-align: top;
+
+    width: 49%;
+    height: 100%;
+}
+
+.sided p, .sided a
+{
+    margin: 0;
+    height: 25px;
 }
