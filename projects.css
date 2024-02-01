@@ -1,0 +1,17 @@
+#content div
+{
+    margin-left: 1vw;
+}
+
+#content div h1, #content div h2, #content div a
+{
+    margin-right: 1vw;
+    display: inline-block;
+}
+
+#content div p
+{
+    font-size: 2.5vh;
+    margin-top: 0;
+    margin-left: 1vw;
+}
