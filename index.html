@@ -1,44 +1,43 @@
 <!DOCTYPE html>
-
 <html>
-
-<head>
-    <title>Evil Buddy</title>
-    <link rel="icon" type="img/png" href="media/favicon.png"/>
+    <head lang="fr">
+        <link rel="stylesheet" href="style.css"/>
+        <script src="script.js"></script>
+        <meta charset="utf-8"/>
+    </head>
     
-    <link rel="stylesheet" href="main.css" type="text/css"/>
-    <link rel="stylesheet" href="cards.css" type="text/css"/>
-</head>
+    <header>
+        <input class="icon" type="image" src="evilbuddy.png" onclick="main()" />
+        <input type="image" src="twitch.png" onclick="twitch()" />
+        <input type="image" src="youtube.png" onclick="youtube()" />
+        <input type="image" src="discord.png" onclick="discord()" />
+        <input type="button" value="Sites" onclick="sites()" />
+    </header>
 
-<body>
-    <div class="body">
-        <h1 class="name">Hi, I'm Evil Buddy</h1>
-
-        <div class="presentation">
-            <img src="media/pfp.webp" class="pfp" />
-            <p class="french">French</p>
-            <p>Developer</p>
-            <p>Gamer</p>
+    <body>
+        <div class="main">
+            <h1>Welcome to Evil Buddy's official site !</h1>
+            <h3>one motto:</h3>
+            <p>No Friends <br/>
+            No Life<br/>
+            Just Games</p>
+            <h3>I am a developer</h3>
+            <p> C# | C++ | HTML | CSS | JS | lua (GMod/Roblox)</p>
+            <h3>And the <a href="https://xoverse.ga/">Xoverse</a> co-founder</h3>
+            <h1>Check and follow me on twitch !</h1>
+            <!--<p>It is empty for now, <br>
+            but you can try the buttons on the navigation bar !</p>-->
+            <div id="twitch-embed"></div>
         </div>
 
-        <p class="info">
-            16yo, he/him, pansexual
-        </p>
-
-        <div class="medias">
-            <img class="card" src="media/steam.png" onclick="window.open('https://steamcommunity.com/id/evilbuddy_/','_blank')" />
-            <img class="card" src="media/discord.png" onclick="window.open('https://discord.com/invite/9qXe59UajH','_blank')" />
-            <img class="card" src="media/reddit.png" onclick="window.open('https://reddit.com/user/Evil_Buddy74','_blank')" />
-            <img class="card" src="media/twitch.png" onclick="window.open('https://twitch.tv/evilbuddy_','_blank')" />
-            <img class="card" src="media/github.png" onclick="window.open('https://github.com/evilbuddy','_blank')" />
-            <img class="card" src="media/X.png" onclick="window.open('https://twitter.com/evilbuddy_','_blank')" />
-            <img class="card" src="media/tiktok.png" onclick="window.open('https://www.tiktok.com/@evil.buddy','_blank')" />
-        </div>
-        
-        <div class="links">
-            <a href="setup/index.html">setup</a>
-        </div>
-    </div>
-</body>
-
+        <script src="https://embed.twitch.tv/embed/v1.js"></script>
+        <script type="text/javascript">
+            new Twitch.Embed("twitch-embed", {
+              width: 854,
+              height: 480,
+              channel: "evilbuddy_",
+              parent: "evilbuddy.github.io"
+            });
+          </script>
+    </body>
 </html>
