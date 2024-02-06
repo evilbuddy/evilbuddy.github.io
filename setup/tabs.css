@@ -1,87 +1,35 @@
-/* tab control */
-.tabcontrol
+.tab
 {
-    display: inline-block;
-    vertical-align: top;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-    max-width: 20%;
-    height: calc(100% - 40px);
-    width: 10rem;
-
-    background-color: #0004;
-
-    border-radius: 20px 0px 0px 20px;
-}
-
-.tabcontrol *
-{
+    color: white;
     display: block;
-}
-
-.tabcontrol div
-{
-    cursor: pointer;
-
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-.tabcontrol div:hover
-{
-    background: #0004;
-}
-
-.tabcontrol div *
-{
-    margin: 0;
+    font-family: Arial;
+    font-size: 40px;
     text-align: center;
-    text-decoration: none;
+    margin: 1rem;
+    width: calc(100% - 2rem);
+    background-color: #0008;
+    border-radius: 24px;
+    cursor: pointer;
 }
 
-.tabcontrol .active
+.open
 {
-    background: #fff4;
+    background-color: #0f0;
 }
 
-/* tab container */
-.tabs
+.tabcontent
 {
-    display: inline-block;
-    vertical-align: top;
-
-    width: calc(100% - 11rem);
-    height: calc(100% - 1rem);
-    margin-top: 1rem;
+    transition: all 0.25s 0.25s linear;
+    overflow: hidden;
+    color: #fff;
+    font-family: Arial;
+    max-width: calc(100% - 2rem);
+    word-wrap: normal;
+    margin: 1rem;
 }
 
-.tabs div
+.tabclosed
 {
-    height: 100%;
-    width: 100%;
-}
-
-.tabs .hidden
-{
-    visibility: hidden;
-
-    width: 0px;
-    height: 0px;
-}
-
-/* other things */
-.sided
-{
-    display: inline-block;
-    vertical-align: top;
-
-    width: 49%;
-    height: 100%;
-}
-
-.sided p, .sided a
-{
-    margin: 0;
-    height: 25px;
+    transition: all 0.25s linear;
+    height: 0 !important;
 }
