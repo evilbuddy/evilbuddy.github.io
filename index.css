@@ -1,0 +1,86 @@
+#content
+{
+    padding-top: 5px;
+    display: block;
+}
+
+#name
+{
+    height: 5vh;
+    text-align: center;
+}
+
+#name *
+{
+    margin: 0;
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+p, a
+{
+    font-size: 5vh;
+    margin-top: 15px;
+    margin-bottom: 0;
+    line-height: 75%;
+}
+
+.time, .duration
+{
+    margin-top: 7px !important;
+    font-size: 16px;
+}
+
+.separator
+{
+    width: 90%;
+    height: 1px;
+    margin-top: 15px;
+    margin-left: 5%;
+    background: linear-gradient(to right, #537ab300, #537ab3ff, #537ab300);
+}
+
+table, tbody, tr
+{
+    width: 100%;
+}
+
+table
+{
+    margin-top: 15px;
+}
+
+th, td
+{
+    font-size: 4vh;
+    text-align: center;
+}
+
+th
+{
+    background-color: #404040;
+}
+
+td
+{
+    background-color: #202020;
+}
+
+td img
+{
+    width: 100%;
+}
+
+::-webkit-scrollbar
+{
+    width: 3px;
+    border-radius: 1px;
+    background: #080808;
+}
+
+::-webkit-scrollbar-thumb
+{
+    background: #537ab3;
+    border-radius: 1px;
+}
