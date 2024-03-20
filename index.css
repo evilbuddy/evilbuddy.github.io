@@ -41,6 +41,11 @@ p, a
     background: linear-gradient(to right, #537ab300, #537ab3ff, #537ab300);
 }
 
+.counter center
+{
+    padding: 3%;
+}
+
 table, tbody, tr
 {
     width: 100%;

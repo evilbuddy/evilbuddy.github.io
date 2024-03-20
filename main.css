@@ -3,6 +3,7 @@ body
     color: #ffffff;
     font-family: 'OMORI';
     background-color: #0e0e0e;
+    margin: 0;
     width: 100vw;
     height: 100vh;
     overflow: hidden;
